@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied"
+    exit 1
+fi
+
+appname=$1
+
+cd $HOME/prog/$appname/
+
+zip -r $HOME/Dropbox/prog/$appname/envs.zip  .env .envs/
