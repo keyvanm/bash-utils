@@ -11,4 +11,4 @@ appname=$1
 cd $HOME/prog/$appname/
 
 mkdir -p $HOME/Dropbox/prog/$appname
-zip -r $HOME/Dropbox/prog/$appname/envs.zip  .env .envs/
+zip -r $HOME/Dropbox/prog/$appname/envs.zip  .env .envs/ secrets/
