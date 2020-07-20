@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied. Please specify the name of the database you'd like to drop."
+    exit 1
+fi
+
+echo "Are you sure you want to drop database $1? Type in 'confirm' to confirm"
+read confirmation
+if [ $confirmation -ne 'confirm' ]
+  then
+    exit 1
+fi
+
+echo "Dropping $1..."
+dropdb $1
+echo "Recreating a $1..."
+createdb $1
