@@ -15,4 +15,4 @@ BACKUP_FOLDER=`date +"%Y-%m-%d %H-%M-%S"`
 mkdir -p $HOME/Dropbox/prog/$appname
 mkdir -p "$HOME/Dropbox/prog/$appname/backup/$BACKUP_FOLDER/"
 mv $HOME/Dropbox/prog/$appname/envs.zip "$HOME/Dropbox/prog/$appname/backup/$BACKUP_FOLDER/envs.zip"
-zip -r $HOME/Dropbox/prog/$appname/envs.zip  .env .envs/ secrets/
+zip -r $HOME/Dropbox/prog/$appname/envs.zip  .env .envs/ secrets/ creds/
